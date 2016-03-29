@@ -1,0 +1,75 @@
+class Shape(object):
+	def __init__(self, name, area):
+		self.name = name
+		self.area = area
+ 
+	def display_name(self):
+		if type(name) == "Triangle":
+			return Triangle()
+		elif type(name) == "Square":
+			return Square()
+		elif type(name) == "Rectangle":
+			return Rectangle()
+ 
+class Triangle(Shape):
+	def __init__(self, side1, side2, side3):
+		self.side1 = side1
+		self.side2 = side2
+		self.side3 = side3
+ 
+	def display_name(self):
+		if self.side1 + self.side2 > self.side3:
+			print ("Triangle")
+ 
+	def calculate_area(self, side, height):
+		self.side = side
+		self.height = height
+		area = (side*height)/2
+		return area
+ 
+my_triangle = Triangle (2,4,3)
+print (my_triangle.display_name())
+print (my_triangle.calculate_area(4,5))
+ 
+ 
+class Square(Shape):
+	def __init__(self, side1, side2, side3, side4):
+		self.side1 = side1
+		self.side2 = side2
+		self.side3 = side3
+		self.side4 = side4
+ 
+	def display_name(self):
+		if self.side1 == self.side2 == self.side3 == self.side4:
+			print ("Square")
+ 
+	def calculate_area(self):
+		area = self.side1**2
+		return area
+ 
+my_square = Square(5,5,5,5)
+print (my_square.display_name())
+print (my_square.calculate_area())
+ 
+class Rectangle(Shape):
+	def __init__(self, width, height):
+		self.side1 = width
+		self.side2 = height
+		self.side3 = width
+		self.side4 = height
+ 
+	def display_name(self):
+		if (self.side1 == self.side3 and self.side2 == self.side4):
+			print ("Rectangle")
+ 
+	def calculate_area(self):
+		return self.side1 * self.side2
+ 
+my_rectangle = Rectangle(6,8)
+print (my_rectangle.display_name())
+print (my_rectangle.calculate_area())
+
+
+
+
+
