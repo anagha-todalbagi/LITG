@@ -2,7 +2,9 @@
 
 Learn IT, Girl project
 
-My mentee, Ina, completed the project as per expectations. Her completed project is currently hosted here: http://inacica.pythonanywhere.com/
+My mentee, Ina, completed the project successfully. 
+Her completed project is currently hosted here: http://inacica.pythonanywhere.com/
+Her codebase is here: https://github.com/inacica/my-first-blog
 
 Her assignments can be found here: 
 https://github.com/anagha-todalbagi/LITG
